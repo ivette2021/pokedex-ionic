@@ -52,9 +52,77 @@
           <ion-col size="4" class="ion-text-center">
             <ion-text>Altura</ion-text>
           </ion-col>
-
           <ion-col size="8" class="ion-text-center">
             <ion-text>{{pokemon.height + 'm'}}<br /></ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>Estadisticas</ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>PS</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text>{{pokemon | getStat: 'hp'}}</ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>Ataque</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text>{{pokemon | getStat: 'attack'}}</ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>Defensa</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text>{{pokemon | getStat: 'defense'}}</ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>Ataque especial</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text>{{pokemon | getStat: 'special-attack'}}</ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>Defensa especial</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text>{{pokemon | getStat: 'defense-attack'}}</ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>Defensa especial</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text>{{pokemon | getStat: 'special-defense'}}</ion-text>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-text>Velocidad</ion-text>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-text>{{pokemon | getStat: 'speed'}}</ion-text>
           </ion-col>
         </ion-row>
       </ion-grid>

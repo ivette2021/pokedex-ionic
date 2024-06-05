@@ -20,13 +20,17 @@
 
 ion-header {
   background: url("assets/img/pokedex-header.png") no-repeat;
-  min-height: 56px;
+  min-height: 60px;
   background-size: cover;
   margin-bottom: 10px;
 }
+ion-header .header-background {
+  backdrop-filter: none !important;
+}
+
 ion-text {
   color: #2d9bd9;
-  font-size: 1.025em;
+  font-size: 1em;
   font-family: "Comfortaa", sans-serif;
   font-weight: bold;
 }
