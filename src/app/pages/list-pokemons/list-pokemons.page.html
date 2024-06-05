@@ -5,6 +5,7 @@
     <ion-row
       class="ion-align-items-center border-bottom"
       *ngFor="let pokemon of pokemons"
+      (click)="goToDetail(pokemon)"
     >
       <ion-col size="3">
         <ion-img [src]="pokemon.sprite"></ion-img>
